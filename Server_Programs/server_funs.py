@@ -1,6 +1,11 @@
 def new_client_welcome(client, server) :
-    server.send_message(client,"Welcome to HoshiTalk.")
+    with open("new_client_message.txt", "rb") as f :
+        server.send_message(client,f.read())
 
 def send_messages(client, server, message) :
-    server.send_message_to_all_except(message, client)
+    if message == "--help" :
+        with open("options.txt", "rb") as f :
+            server.send_message(client,f.read())
+    else :
+        server.send_message_to_all_except(message, client)
 
