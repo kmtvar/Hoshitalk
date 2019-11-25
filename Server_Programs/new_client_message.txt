@@ -1,0 +1,24 @@
+#################################################
+Welcome to HoshiTalk.
+This is a completely anonymous IRC made by kmtvar.
+Any more details  ---> https://kmtvar.eleken.jp
+#################################################
+
+''''''''''''''''''OPTIONS''''''''''''''''''
+
+  --help : show the list of options
+  --undefined : 
+  --undefined : 
+  --undefined : 
+  --undefined : 
+  --undefined : 
+  --undefined : 
+  --undefined : 
+  --undefined : 
+  --undefined : 
+  --undefined : 
+  Ctrl + C : finish this chat
+
+''''''''''''''''''''''''''''''''''''''''''
+
+Chat log :
