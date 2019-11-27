@@ -15,7 +15,7 @@ def unix_input_with_timeout(prompt='', timeout=10000):
 def client_send(ws) :
     while not stop :
         try :
-            messages = unix_input_with_timeout(prompt="",timeout=0.2)
+            messages = unix_input_with_timeout(prompt="Me>>",timeout=0.2)
             ws.send(messages)
         except :
             pass
