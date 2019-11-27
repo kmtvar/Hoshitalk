@@ -7,5 +7,6 @@ def send_messages(client, server, message) :
         with open("options.txt", "rb") as f :
             server.send_message(client,f.read())
     else :
-        server.send_message_to_all_except(message, client)
+        user_id = f"User{client['id']}>>"
+        server.send_message_to_all_except(user_id + message, client)
 
