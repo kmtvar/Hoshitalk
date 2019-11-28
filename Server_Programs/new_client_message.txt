@@ -1,7 +1,7 @@
 #################################################
 Welcome to HoshiTalk.
 This is a completely anonymous IRC made by kmtvar.
-Any more details  ---> https://kmtvar.eleken.jp
+Any more details  ---> 
 #################################################
 
 ''''''''''''''''''OPTIONS''''''''''''''''''
