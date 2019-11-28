@@ -1,16 +1,18 @@
 from websocket import create_connection
 import threading
 import client_funs
+import ssl
 
+#print("Set ip address: ")
 #server_ip = input("")
-server_ip = "192.168.0.12"
+server_ip = "127.0.0.1"
 server_port = "12345"
-server_info = "ws://" + server_ip + ":" + server_port
+server_info = "wss://" + server_ip + ":" + server_port
 flag = True
 
 while True :
     try :
-        ws = create_connection(server_info,timeout=0.2)
+        ws = create_connection(server_info,sslopt={"cert_reqs": ssl.CERT_NONE},timeout=0.2)
         break
     except KeyboardInterrupt :
         flag = False
@@ -30,8 +32,7 @@ if flag == True :
         except KeyboardInterrupt :
             print("Keyboard Interrupt. Disconnect with the server")
             client_funs.stop = True
-            break
-            
+            break            
     thread_send.join()
     thread_recv.join()
     ws.close()
